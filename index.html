@@ -144,7 +144,7 @@
         }
 
         .fade-out {
-            transition: opacity .6s ease!important;
+            transition: opacity .6s ease !important;
             opacity: 0;
         }
 
@@ -204,7 +204,6 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
-
                 background: #fff;
                 border-top: 1px solid #ccc;
                 padding: 10px;
@@ -212,7 +211,7 @@
             }
         }
 
-        #cookie-consent-banner {
+        #c8kie-c0nsent-banner {
             animation: 2s ease-out 1 ccb;
             position: fixed;
             box-sizing: border-box;
@@ -233,7 +232,7 @@
             box-shadow: 10px 10px 20px #b3b3b3, -10px -10px 20px #ffffff;
         }
 
-        #cookie-content {
+        #c8kie-c0ntent {
             grid-column-gap: .5rem;
             grid-row-gap: .5rem;
             flex-flow: column;
@@ -266,7 +265,7 @@
             padding: 0.75rem 1.5rem 1.5rem 1.5rem;
         }
 
-        #accept-cookie-consent {
+        #accept-c8kie-c0nsent {
             background-color: #000;
             color: #fff;
             letter-spacing: 1px;
@@ -279,7 +278,7 @@
             overflow: visible;
         }
 
-        .accept-cookie-consent {
+        .accept-c8kie-c0nsent {
             color: #ffffff;
             position: absolute;
             text-align: center;
@@ -292,31 +291,31 @@
             transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
-        .btn-txt-container .accept-cookie-consent:nth-child(1) {
+        .btn-txt-container .accept-c8kie-c0nsent:nth-child(1) {
             transform: rotateX(-90deg) translateY(50%);
             opacity: 0;
             font-weight: 400;
         }
 
-        .btn-txt-container:hover .accept-cookie-consent:nth-child(1) {
+        .btn-txt-container:hover .accept-c8kie-c0nsent:nth-child(1) {
             transform: rotateX(0deg) translateY(50%);
             opacity: 1;
             font-weight: 700;
         }
 
-        .btn-txt-container .accept-cookie-consent:nth-child(2) {
+        .btn-txt-container .accept-c8kie-c0nsent:nth-child(2) {
             transform: rotateX(0deg) translateY(-50%);
             opacity: 1;
             font-weight: 400;
         }
 
-        .btn-txt-container:hover .accept-cookie-consent:nth-child(2) {
+        .btn-txt-container:hover .accept-c8kie-c0nsent:nth-child(2) {
             transform: rotateX(-90deg) translateY(-50%);
             opacity: 0;
             font-weight: 700;
         }
 
-        #deny-cookie-consent {
+        #deny-c8kie-c0nsent {
             display: flex;
             justify-content: center;
             color: #090909;
@@ -327,7 +326,7 @@
             width: 70%;
         }
 
-            #deny-cookie-consent .btn-txt-container {
+            #deny-c8kie-c0nsent .btn-txt-container {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -335,20 +334,18 @@
                 width: 100%;
             }
 
-            .btn-txt-container .deny-cookie-consent {
-                align-self: center;
-                color: #000;
-                font-weight: 400;
-                font-size: 15px;
-                transition: all 1.5s;
-            }
+        .btn-txt-container .deny-c8kie-c0nsent {
+            align-self: center;
+            color: #000;
+            font-weight: 400;
+            font-size: 15px;
+            transition: all 1.5s;
+        }
 
-        .btn-txt-container:hover .deny-cookie-consent {
+        .btn-txt-container:hover .deny-c8kie-c0nsent {
             animation: 1.5s ease-out 1 ccd;
             color: #555;
         }
-
-
     </style>
 </head>
 <body>
@@ -660,8 +657,8 @@
         with regard to the processing of personal data and on the free movement of
         such data and repealing Directive 95/46/EC (GDPR)).
     </footer>
-    <div id="cookie-consent-banner" class="no-print">
-        <div id="cookie-content">
+    <div id="c8kie-c0nsent-banner" class="no-print">
+        <div id="c8kie-c0ntent">
             <div id="cookie-title">Cookie Settings</div>
             <div id="cookie-desc">
                 By clicking “Accept”, you agree to the storage
@@ -670,24 +667,24 @@
             </div>
         </div>
         <div id="cookie-actions">
-            <a href="#" id="accept-cookie-consent" role="button" tabindex="0">
+            <a href="#" id="accept-c8kie-c0nsent" role="button" tabindex="0">
                 <div class="btn-txt-container">
-                    <div class="accept-cookie-consent">
+                    <div class="accept-c8kie-c0nsent">
                         Accept
                     </div>
-                    <div class="accept-cookie-consent">
+                    <div class="accept-c8kie-c0nsent">
                         Accept
                     </div>
                 </div>
             </a>
-            <a href="#" id="deny-cookie-consent" role="button" tabindex="0">
+            <a href="#" id="deny-c8kie-c0nsent" role="button" tabindex="0">
                 <div class="btn-txt-container">
-                    <div class="deny-cookie-consent">Deny</div>
+                    <div class="deny-c8kie-c0nsent">Deny</div>
                 </div>
             </a>
         </div>
     </div>
-    <script id="cookie-consent-scr">
+    <script id="c8kie-c0nsent-scr">
         // Funkcja do ustawiania cookie
         function setCookie(name, value, days) {
             let expires = "";
@@ -712,7 +709,7 @@
 
         // Funkcja do ukrycia banera
         function hideConsentBanner() {
-            const banner = document.getElementById("cookie-consent-banner");
+            const banner = document.getElementById("c8kie-c0nsent-banner");
 
             // Dodajemy klasę powodującą animację zanikania
             banner.classList.add("fade-out");
@@ -751,8 +748,8 @@
             }
 
             // Pobieramy przyciski Accept i Deny (przyjmujemy, że mają przypisane klasy)
-            const acceptBtn = document.querySelector('a[role="button"]#accept-cookie-consent');
-            const denyBtn = document.querySelector('a[role="button"]#deny-cookie-consent');
+            const acceptBtn = document.querySelector('a[role="button"]#accept-c8kie-c0nsent');
+            const denyBtn = document.querySelector('a[role="button"]#deny-c8kie-c0nsent');
 
             if (acceptBtn) {
                 acceptBtn.addEventListener("click", function (event) {
