@@ -4,8 +4,6 @@
     <title>Wiktoria Warchoł - Curriculum Vitae - 2025</title>
     <link rel="icon" href="favicon.ico">
     <link rel="favicon" href="favicon.ico">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB4Z4BH25N"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-QB4Z4BH25N');</script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,7 +24,7 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-            color: #888;
+            color: #666;
             background-color: #fff;
             text-align: center;
             font-size: 8pt;
@@ -143,6 +141,210 @@
             height: 5mm;
             float: right;
             width: 85%;
+        }
+
+        .fade-out {
+            transition: opacity .6s ease !important;
+            opacity: 0;
+        }
+
+        @keyframes ccb {
+            0% {
+                transform: translateY(296px) translateX(65%);
+            }
+
+            60% {
+                transform: translateY(296px) translateX(65%);
+            }
+
+            100% {
+                transform: translateY(0) translateX(65%);
+            }
+        }
+
+        @keyframes ccd {
+            0% {
+                transform: rotateY(45deg);
+                color: #000;
+            }
+
+            20% {
+                transform: rotateY(-45deg);
+                color: #111;
+            }
+
+            40% {
+                transform: rotateY(30deg);
+                color: #222;
+            }
+
+            60% {
+                transform: rotateY(-30deg);
+                color: #333;
+            }
+
+            80% {
+                transform: rotateY(10deg);
+                color: #444;
+            }
+
+            100% {
+                transform: rotateY(0deg);
+                color: #555;
+            }
+        }
+
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: #fff;
+                border-top: 1px solid #ccc;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+
+        #cookie-consent-banner {
+            animation: 2s ease-out 1 ccb;
+            position: fixed;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            height: 265px;
+            width: 400px;
+            bottom: 30px !important;
+            transform: translateX(65%);
+            transition: all 3s;
+            backdrop-filter: blur(10px);
+            background-color: #e3e3e333;
+            border: 1px solid #00000026;
+            border-radius: 16px;
+            flex-direction: column;
+            font-size: .9375rem;
+            line-height: 1.4;
+            box-shadow: 10px 10px 20px #b3b3b3, -10px -10px 20px #ffffff;
+        }
+
+        #cookie-content {
+            grid-column-gap: .5rem;
+            grid-row-gap: .5rem;
+            flex-flow: column;
+            display: flex;
+            padding: 1.5rem 1.5rem 0.75rem 1.5rem;
+        }
+
+        #cookie-title {
+            color: #0a0a0a;
+            margin-bottom: 0.2em;
+            font-size: 1.25rem;
+            font-weight: 700;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        #cookie-desc {
+            color: #0b0b0b;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        #cookie-actions {
+            grid-column-gap: 0.5rem;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr;
+            display: grid;
+            flex-wrap: wrap;
+            padding: 0.75rem 1.5rem 1.5rem 1.5rem;
+        }
+
+        #accept-cookie-consent {
+            background-color: #000;
+            color: #fff;
+            letter-spacing: 1px;
+            border-radius: 10px;
+            width: 100%;
+            padding: .8rem 1.5rem .75rem;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            overflow: visible;
+        }
+
+        .accept-cookie-consent {
+            color: #ffffff;
+            position: absolute;
+            text-align: center;
+            letter-spacing: 0;
+            font-weight: 500;
+            line-height: 1.3em;
+            position: relative;
+            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .btn-txt-container .accept-cookie-consent:nth-child(1) {
+            transform: rotateX(-90deg) translateY(50%);
+            opacity: 0;
+            font-weight: 400;
+        }
+
+        .btn-txt-container:hover .accept-cookie-consent:nth-child(1) {
+            transform: rotateX(0deg) translateY(50%);
+            opacity: 1;
+            font-weight: 700;
+        }
+
+        .btn-txt-container .accept-cookie-consent:nth-child(2) {
+            transform: rotateX(0deg) translateY(-50%);
+            opacity: 1;
+            font-weight: 400;
+        }
+
+        .btn-txt-container:hover .accept-cookie-consent:nth-child(2) {
+            transform: rotateX(-90deg) translateY(-50%);
+            opacity: 0;
+            font-weight: 700;
+        }
+
+        #deny-cookie-consent {
+            display: flex;
+            justify-content: center;
+            color: #090909;
+            text-align: center;
+            font-size: .95rem;
+            text-decoration: none;
+            margin-left: 30%;
+            width: 70%;
+        }
+
+            #deny-cookie-consent .btn-txt-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+            }
+
+        .btn-txt-container .deny-cookie-consent {
+            align-self: center;
+            color: #000;
+            font-weight: 400;
+            font-size: 15px;
+            transition: all 1.5s;
+        }
+
+        .btn-txt-container:hover .deny-cookie-consent {
+            animation: 1.5s ease-out 1 ccd;
+            color: #555;
         }
     </style>
 </head>
@@ -455,5 +657,119 @@
         with regard to the processing of personal data and on the free movement of
         such data and repealing Directive 95/46/EC (GDPR)).
     </footer>
+    <div id="cookie-consent-banner" class="no-print">
+        <div id="cookie-content">
+            <div id="cookie-title">Cookie Settings</div>
+            <div id="cookie-desc">
+                By clicking “Accept”, you agree to the storage
+                of cookies on your device to improve navigation on the website, to
+                analyze the use of the website and to support marketing activities.
+            </div>
+        </div>
+        <div id="cookie-actions">
+            <a href="#" id="accept-cookie-consent" role="button" tabindex="0">
+                <div class="btn-txt-container">
+                    <div class="accept-cookie-consent">
+                        Accept
+                    </div>
+                    <div class="accept-cookie-consent">
+                        Accept
+                    </div>
+                </div>
+            </a>
+            <a href="#" id="deny-cookie-consent" role="button" tabindex="0">
+                <div class="btn-txt-container">
+                    <div class="deny-cookie-consent">Deny</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script id="cookie-consent-scr">
+        // Funkcja do ustawiania cookie
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        // Funkcja do odczytu cookie
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i].trim();
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length);
+            }
+            return null;
+        }
+
+        // Funkcja do ukrycia banera
+        function hideConsentBanner() {
+            const banner = document.getElementById("cookie-consent-banner");
+
+            // Dodajemy klasę powodującą animację zanikania
+            banner.classList.add("fade-out");
+
+            // Nasłuchujemy zakończenia przejścia
+            this.addEventListener("transitionend", () => {
+                banner.style.display = "none";
+            }, { once: true });
+        }
+
+        function loadGoogleAnalytics() {
+            // Tworzymy tag <script> do załadowania biblioteki gtag.js
+            const gaScript = document.createElement("script");
+            gaScript.async = true;
+            // Identyfikator śledzenia
+            gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-QB4Z4BH25N";
+            document.head.appendChild(gaScript);
+
+            // Po załadowaniu skryptu inicjujemy konfigurację GA
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            // Inicjalizacja GA
+            gtag('js', new Date());
+            gtag('config', 'G-QB4Z4BH25N'); // Zamień na swój identyfikator
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Sprawdzamy, czy zgoda już została udzielona lub odrzucona
+            const consent = getCookie("cookieConsent");
+            if (consent === "true" || consent === "false") {
+                hideConsentBanner();
+                // W zależności od wartości cookie możesz dodatkowo wykonywać inne akcje:
+                if (conset === "true") { loadGoogleAnalytics(); }
+                // if (consent === "true") { loadAdditionalScripts(); }
+                return;
+            }
+
+            // Pobieramy przyciski Accept i Deny (przyjmujemy, że mają przypisane klasy)
+            const acceptBtn = document.querySelector('a[role="button"]#accept-cookie-consent');
+            const denyBtn = document.querySelector('a[role="button"]#deny-cookie-consent');
+
+            if (acceptBtn) {
+                acceptBtn.addEventListener("click", function (event) {
+                    event.preventDefault(); // zapobiega domyślnej akcji linka
+                    setCookie("cookieConsent", "true", 365);
+                    hideConsentBanner();
+                    // Załaduj skrypty Google Analytics
+                    loadGoogleAnalytics();
+                });
+            }
+
+            if (denyBtn) {
+                denyBtn.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    setCookie("cookieConsent", "false", 365);
+                    hideConsentBanner();
+                    // Wyłączyć ładowanie skryptów, które wymagają zgody
+                });
+            }
+        });
+    </script>
 </body>
 </html>
