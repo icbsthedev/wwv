@@ -5,6 +5,10 @@
     <link rel="icon" href="favicon.ico">
     <link rel="favicon" href="favicon.ico">
     <style>
+        .langitem {
+            width: 49pt;
+            display: inline-table;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -382,16 +386,24 @@
         <h2>LANGUAGES</h2>
         <hr />
         <div class="content">
-            <div class="lang">
+            <!-- <div class="lang">
                 <nobr>
                     <div style="display:inline-block;font-weight:bolder;">POLISH</div>
                     <div style="display:inline-block;font-weight:bolder;">NATIVE</div>
+                </nobr>
+            </div> -->
+
+            <div class="lang">
+                <nobr>
+                    <div class="langitem" style="display:inline-block;font-weight:bolder;">POLISH</div>
+                    <div style="display:inline-block;width:50%;background:#BBB;"><div style="width: 100%; background: #888;">&nbsp;</div></div>
+                    <div style="display:inline-block;font-weight:bolder;">NATIVE(C2)</div>
                 </nobr>
             </div>
 
             <div class="lang">
                 <nobr>
-                    <div style="display:inline-block;font-weight:bolder;">GERMAN</div>
+                    <div class="langitem" style="display:inline-block;font-weight:bolder;">GERMAN</div>
                     <div style="display:inline-block;width:50%;background:#BBB;"><div style="width: 95%; background: #888;">&nbsp;</div></div>
                     <div style="display:inline-block;font-weight:bolder;">FLUENT (C1/C2)</div>
                 </nobr>
@@ -399,7 +411,7 @@
 
             <div class="lang">
                 <nobr>
-                    <div style="display:inline-block;font-weight:bolder;">ENGLISH</div>
+                    <div class="langitem" style="display:inline-block;font-weight:bolder;">ENGLISH</div>
                     <div style="display:inline-block;width:50%;background:#BBB;"><div style="width: 95%; background: #888;">&nbsp;</div></div>
                     <div style="display:inline-block;font-weight:bolder;">FLUENT (C1/C2)</div>
                 </nobr>
